@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte dos Anjos</title>
+    <meta name="author" content="Luísa Anjos" />
+    <meta name="keywords" content="artesanato, encomenda, fantasias, roupas infantis, aromatizantes" />
+    <meta name="description" content="Encomendas e pronta entrega de fantasias e roupas para crianças, aventais e aromatizadores de ambiente." />
+    <style>
+        @font-face {
+            font-family: font;
+            src: url("TwinkleStar-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: fonteTexto;
+            src: url("PatrickHand-Regular.ttf");
+        }
+      
+        h1 {
+            font-family: font;
+            font-size: 35px;
+            color: #03A9F4;
+        }
+
+        p {
+            font-family: fonteTexto;
+            font-size: 25px;
+            color: black;
+        }
+      </style>
+</head>
+
+<body link="#757575" alink="#757575" vlink="#757575">
+    <!-- <h1 align="center">arte dos anjos</h1> -->
+    <center>
+        <img src="imgs/banner.png" alt="Logo Arte dos Anjos" align="middle" height="250">
+    </center>
+    <center>
+        <font face="fonteTexto" size="5">
+        <a href="index.html">Home</a>
+        <a href="index.html#pag-fantasias">Fantasias</a>
+        <a href="index.html#pag-criancas">Crianças</a>
+        <a href="index.html#pag-aromatizantes">Aromatizantes</a>
+        <a href="index.html#pag-contatos">Contatos</a>
+        <a href="#">Encomendas</a>
+        </font>
+    </center>
+    <p align="center">Encomendas e pronta entrega de fantasias e roupas para crianças, aventais e aromatizadores de ambiente!</p>
+    <p align="center">Feito por Rosângela dos Anjos &#x2764; </p>
+    <hr id="pag-fantasias"/>
+
+    <h1 align="center">Encomendas</h1>
+   
+    <form name="" method="" action="">
+        <label for="nome">Nome:</label><br>
+        <input id="nome" type="text" name="nome_completo" size="50" placeholder="Digite seu nome completo" required autofocus> <br> <!-- size indica o numero de caracteres / placeholder é um indicativo do que é pra digitar -->
+
+        <label for="email">E-mail:</label><br>
+        <input id="email" type="email" name="email" placeholder="nome@email.com" size="50"><br>
+
+        <label for="senha">Senha:</label><br>
+        <input id="senha" type="password" name="senha" size="50" placeholder="somente números"><br>
+
+        <label for="celular">Celular:</label><br>
+        <input id="celular" type="tel" name="celular" size='50' placeholder="(99) 99999-9999" pattern=“^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$”><br>
+
+        <label for="data">Data:</label><br>
+        <input id="date" type="date" name="data"><br>
+
+        <label for="hora">Hora:</label><br>
+        <input id="hora" type="time" name="hora"><br>
+
+        <label for="aulas">Quantidade:</label><br>
+        <input id="aulas" type="number" min="1" max="10" step="1"><br>
+
+        <label for="tipo">Tipo:</label>
+        <select name="tipo" id="tipo">
+            <option value="">Selecione</option>
+            <option value="fantasia">Fantasia</option>
+            <option value="junina">Roupa junina</option>
+            <option value="menina">Roupa menina</option>
+            <option value="menino">Roupa menino</option>
+            <option value="bebe">Roupa bebê</option>
+            <option value="aromatizante">Aromatizante</option>
+        </select><br>
+
+        <fieldset>
+            <legend>Gênero:</legend>
+            <input id="fem" type="radio" name="genero" value="fem"> <label for="fem">Feminino</label><br>
+            <input id="masc" type="radio" name="genero" value="masc"> <label for="masc">Masculino</label><br>
+            <input id="outro" type="radio" name="genero" value="outro"><label for="outro">Outro:</label><input type="text">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Opções:</legend>
+            <input id="vestido" type="checkbox" name="opcoes" value="vestido"> <label for="vestido">Vestido</label>
+            <input id="saia" type="checkbox" name="opcoes" value="saia"> <label for="saia">Saia</label>
+            <input id="macaq" type="checkbox" name="opcoes" value="macaquinho"> <label for="macaq">Macaquinho</label>
+            <input id="aromat" type="checkbox" name="opcoes" value="aromatizante"> <label for="aromat">Aromatizante</label>
+        </fieldset>
+
+        <label for="msg">Mensagem:</label><br>
+        <textarea name="" id="msg" cols="50" rows="10"></textarea>
+
+        <p><input type="submit" name="bnt-encomendar" value="ENVIAR">
+            <input type="reset" name="bnt-cancelar"  value="CANCELAR"></p>
+        
+    </form>
+    
+    <p align="center">Desenvolvido por <a href="https://www.instagram.com/luisavitoria" target="_blank">Luísa Vitória</a> - 2022</p>
+    
+
+</body>
+</html>
